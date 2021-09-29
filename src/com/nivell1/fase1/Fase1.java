@@ -67,21 +67,19 @@ public class Fase1 {
     }
 
     public void showListStrings(List<String> words) {
-        words.stream().forEach(System.out::println);
+        words.forEach(System.out::println);
     }
 
     public void showMonthsWithLambda() {
         List<String> months = Arrays.asList("Gener", "Febrer", "Març", "Abril", "Maig", "Juny",
                 "Juliol", "Agost", "Setembre", "Octubre", "Novembre", "Desembre");
-        months.stream()
-                .forEach(x -> System.out.println(x));
+        months.forEach(x -> System.out.println(x));
     }
 
     public void showMonthsWithMethodReference() {
         List<String> months = Arrays.asList("Gener", "Febrer", "Març", "Abril", "Maig", "Juny",
                 "Juliol", "Agost", "Setembre", "Octubre", "Novembre", "Desembre");
-        months.stream()
-                .forEach(System.out::println);
+        months.forEach(System.out::println);
     }
 
 }

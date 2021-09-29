@@ -50,7 +50,7 @@ public class Nivell2 {
 
     public void showArraySortedByLengthAsc(String[] array) {
         Arrays.stream(array)
-                .sorted(Comparator.comparing(x -> x.length()))
+                .sorted(Comparator.comparing(String::length))
                 .forEach(System.out::println);
     }
 
